@@ -2,7 +2,7 @@ const express=require("express");
 const app=express();
 const path=require("path");
 const port = process.env.PORT || 8000;
-const staticPath= path.join(__dirname, "../public/project");
+const staticPath= path.join(__dirname, "../project");
 //builting middleware
 app.use(express.static(staticPath));
 app.get("/",(req,res)=>{
